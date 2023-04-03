@@ -1,0 +1,6 @@
+copy sdk file to project root
+go to ide and open settings.gradle and add include ':sdk'
+open build.gradle file add applicationId "opencv.org" in defaultConfig block
+in same file change juint verison to testImplementation 'junit:junit:4.13.2'
+open manifest file of sdk and remove minVersion and TragetVerison blocks
+int build.gradle(:sdk) file change minVerison TargetVerison and CompileVersion with settings.gradle(:app) file's settings 
